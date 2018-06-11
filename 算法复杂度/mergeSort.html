@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>归并排序</title>
+</head>
+<body>
+<script>
+    function bigMergeSort(arr) {
+        if (arr.length < 2) {
+            return arr;
+        }
+        mergeSort(arr, 0, arr.length - 1);
+        return arr;
+    }
+    function mergeSort(arr, l, r) {
+        if (l === r) {
+            return arr;
+        }
+        //取中位数，如果直接用(l+r)/2可能会溢出，而右移相当于除2，而且比除法速度快。
+        var mid = l + ((r - l) >> 1);
+        mergeSort(arr, l, mid);
+        mergeSort(arr, mid + 1, r);
+        merge(arr, l, mid, r);
+    }
+    function merge(arr, l, m, r) {
+        var tmp = new Array(r - l + 1);
+        var i = 0, p1 = l, p2 = m + 1;
+        while (p1 <= m && p2 <= r) { //将剩下数中最小数依次放在新数组内
+            tmp[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
+        }
+        while (p1 <= m) {
+            tmp[i++] = arr[p1++];
+        }
+        while (p2 <= r) {
+            tmp[i++] = arr[p2++];
+        }
+        for (i = 0; i < tmp.length; i++) {
+            arr[l + i] = tmp[i];
+        }
+        return arr;
+    }
+    console.log(bigMergeSort([2, 5, 1, 6, 3]));
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>冒泡排序</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="" rel="stylesheet">
+</head>
+<body>
+
+</body>
+<script>
+	function bubbleSort(arr){
+		if(arr.length<2){
+			return arr;
+		}
+		for (var e=arr.length-1;e>0;e--){//e为未排序的数组长度
+			for (var i = 0; i < e; i++){
+				if(arr[i]>arr[i+1]){//大数依次往后沉
+					swap(arr,i,i+1);
+				}
+			}
+		}
+		return arr;
+	}
+	function swap(arr,i,j){
+		/*只有在i与j不相等时才能用
+		arr[i]=arr[i]^arr[j];
+		arr[j]=arr[i]^arr[j];
+		arr[i]=arr[i]^arr[j];*/
+		var tmp=arr[i];
+		arr[j]=tmp;
+		arr[i]=arr[j];
+	}
+	console.log(bubbleSort([2,5,1,6,3]));
+</script>
+</html>

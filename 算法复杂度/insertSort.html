@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>插入排序</title>
+</head>
+<body>
+
+</body>
+<script>
+    function insertSort(arr) {
+        if (arr.length < 2) {
+            return arr;
+        }
+        for (var i = 0, l = arr.length; i < l; i++) {
+            for (var j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--) {//依次将第j个插入到前面排序好的j-1数组中
+                swap(arr, j, j + 1);
+            }
+        }
+        return arr;
+    }
+    function swap(arr, i, j) {
+        /*只有在i与j不相等时才能用
+         arr[i]=arr[i]^arr[j];
+         arr[j]=arr[i]^arr[j];
+         arr[i]=arr[i]^arr[j];*/
+        var tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+    }
+    console.log(insertSort([2, 5, 1, 6, 3]));
+</script>
+</html>

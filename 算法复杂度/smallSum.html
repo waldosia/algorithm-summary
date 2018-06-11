@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小和问题</title>
+</head>
+<body>
+
+</body>
+<script>
+    function smallSum(arr) {
+        if (arr.length < 2) {
+            return 0;
+        }
+        return mergeSort(arr, 0, arr.length - 1);
+    }
+    function mergeSort(arr, l, r) {
+        if (l === r) {
+            return 0;
+        }
+        //取中位数，如果直接用(l+r)/2可能会溢出，而右移相当于除2，而且比除法速度快。
+        var mid = l + ((r - l) >> 1);
+        return mergeSort(arr, l, mid) + mergeSort(arr, mid + 1, r) + merge(arr, l, mid, r);
+    }
+    function merge(arr, l, m, r) {
+        var tmp = new Array(r - l + 1);
+        var i = 0, p1 = l, p2 = m + 1, res = 0;
+        while (p1 <= m && p2 <= r) {
+            res += arr[p1] < arr[p2] ? (r - p2 + 1) * arr[p1] : 0; //提取小和
+            tmp[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
+        }
+        while (p1 <= m) {
+            tmp[i++] = arr[p1++];
+        }
+        while (p2 <= r) {
+            tmp[i++] = arr[p2++];
+        }
+        for (i = 0; i < tmp.length; i++) {
+            arr[l + i] = tmp[i];
+        }
+        return res;
+    }
+    console.log(smallSum([2, 5, 1, 6, 3]));
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随机快排</title>
+</head>
+<body>
+
+</body>
+<script>
+    function randomQuickSort(arr) {
+        if (arr.length < 2) {
+            return arr;
+        }
+        quickSort(arr,0,arr.length-1);
+        return arr;
+    }
+    function quickSort(arr, l, r) {
+        if (l < r) {
+            swap(arr, l + Math.round(Math.random() * (r - l)), r);//随机选择一个数放在最后
+            var p = partition(arr, l, r);
+            quickSort(arr, l, p[0]-1); //小于区排序
+            quickSort(arr, p[1] + 1, r); //大于区排序
+        }
+        return arr;
+    }
+    function partition(arr, l, r) {
+        var less = l - 1;  //小于区域最后一个
+        var more = r;    //大于区域最前面一个
+        while (l < more) {
+            if (arr[l] < arr[r]) {//小于随机数时，该数与小于区边界后一个交换
+                swap(arr, ++less, l++);
+            } else if (arr[l] > arr[r]) {//大于随机数时，该数与大于区前一个数交换
+                swap(arr, --more, l);
+            } else {//等于时跳下一个
+                l++;
+            }
+        }
+        swap(arr, more, r); //将选择的随机数放到大于区第一个
+        return [less+1, more]; //返回小于区和大于区的边界
+    }
+    function swap(arr, i, j) {
+        /*只有在i与j不相等时才能用
+         arr[i]=arr[i]^arr[j];
+         arr[j]=arr[i]^arr[j];
+         arr[i]=arr[i]^arr[j];*/
+        var tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+    }
+    console.log(randomQuickSort([2, 5, 1, 6, 3]));
+</script>
+</html>

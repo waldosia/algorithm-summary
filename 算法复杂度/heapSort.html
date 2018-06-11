@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>堆排序</title>
+</head>
+<body>
+
+</body>
+<script>
+    function heapSort(arr) {
+        if (arr.length < 2) {
+            return arr;
+        }
+        for (var i = 0, l = arr.length; i < l; i++) {
+            heapInsert(arr, i);
+        }
+        var size=arr.length;
+        swap(arr,0,--size);
+        while (size>0){
+            heapify(arr,0,size);
+            swap(arr,0,--size)
+        }
+        return arr;
+    }
+    //建立大根堆
+    function heapInsert(arr, index) {
+        while (arr[index] > arr[(index - 1) / 2]) {
+            swap(arr, index, (index - 1) / 2);
+            index = (index - 1) / 2;
+        }
+    }
+    //根顶下沉
+    function heapify(arr, index, size) {//下沉操作
+        var left = index * 2 + 1;
+        while (left < size) {//是否有后代
+            //找出较大孩子序号
+            var largest = left + 1 < size && arr[left + 1] > arr[left] ? left + 1 : left;
+            largest = arr[largest] > arr[index] ? largest : index;//我以及我孩子中的最大值序号
+            if (largest === index) {
+                break;
+            }
+            swap(arr, largest, index);
+            index = largest;
+            left = index * 2 + 1;
+        }
+    }
+    //互换函数
+    function swap(arr, i, j) {
+        var tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+    }
+    console.log(heapSort([2, 5, 1, 6, 3]));
+
+</script>
+</html>

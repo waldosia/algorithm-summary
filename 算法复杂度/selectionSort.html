@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择排序</title>
+</head>
+<body>
+
+</body>
+<script>
+    function selectionSort(arr) {
+        if (arr.length < 2) {
+            return arr;
+        }
+        for (var i = 0, l = arr.length; i < l; i++) {//从第一个开始依次将最小数放在第i位置
+            var minIndex = i;
+            for (var j = i + 1; j < l; j++) {
+                minIndex = arr[j] < arr[minIndex] ? j : minIndex;
+            }
+            swap(arr, i, minIndex);//将剩下的最小数插入指定位置
+        }
+        return arr;
+    }
+    function swap(arr, i, j) {
+        /*只有在i与j不相等时才能用
+         arr[i]=arr[i]^arr[j];
+         arr[j]=arr[i]^arr[j];
+         arr[i]=arr[i]^arr[j];*/
+        var tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+    }
+    console.log(selectionSort([2, 5, 1, 6, 3]));
+</script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排序后的最大相邻数差值问题</title>
+</head>
+<body>
+<script>
+    function maxGap(arr) {
+        if (arr.length < 2) {
+            return 0;
+        }
+        var len = arr.length;
+        var max = Number.MIN_VALUE;
+        var min = Number.MAX_VALUE;
+        for (var n = 0; n < len; n++) {
+            min = Math.min(min, arr[n]);
+            max = Math.max(max, arr[n]);
+        }
+        if (max === min) {
+            return 0;
+        }
+        var hasNum = new Array(len + 1);//桶内是否有数数组
+        var maxs = new Array(len + 1);//桶内最大值数组
+        var mins = new Array(len + 1);//桶内最小值数组
+        var bid = 0;
+        for (var i = 0; i < len; i++) {
+            bid = bucket(arr[i], len, min, max);
+            //更新桶信息
+            mins[bid] = hasNum[bid] ? Math.min(mins[bid], arr[i]) : arr[i];
+            maxs[bid] = hasNum[bid] ? Math.max(maxs[bid], arr[i]) : arr[i];
+            hasNum[bid] = true;
+        }
+        var res = 0;
+        var lastMax = maxs[0]; //上一个桶的最大值
+        for (var j = 1; j <= len; j++) {
+            if (hasNum[j]) {
+                res = Math.max(res, mins[j] - lastMax); //取非空桶与上一个桶的差值中的最大值。
+                lastMax = maxs[j];
+            }
+        }
+        return res;
+
+    }
+    /**
+     * 判断数字进第几号桶
+     * @param num
+     * @param len
+     * @param min
+     * @param max
+     * @returns {Number}
+     */
+    function bucket(num, len, min, max) {
+        return parseInt((num - min) * len / (max - min));
+    }
+    console.log(maxGap([1, 3, 5, 11, 8, 4]));
+</script>
+</body>
+</html>
