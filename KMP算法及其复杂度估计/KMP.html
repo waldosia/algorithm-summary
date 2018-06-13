@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KMP</title>
+</head>
+<body>
+<script>
+    /**
+     * KMP算法求解str1是否包含str2，若包含，返回包含的起始位置，若不包含，返回-1；
+     * @param str1
+     * @param str2
+     * @returns {number}
+     * @constructor
+     */
+    function KMP(str1, str2) {
+        if (str1.length < 1 || str2.length < 1 || str1.length < str2.length) {
+            return -1;
+        }
+        var arr1 = str1.split('');
+        var arr2 = str2.split('');
+        var i1 = 0; //str1配对索引
+        var i2 = 0; //str2配对索引
+        var next = getNextArray(arr2);
+        while (i1 < str1.length && i2 < str2.length) {
+            if (arr1[i1] === arr2[i2]) {//i1字符与i2字符配对成功，继续配对下一个
+                i1++;
+                i2++;
+            } else if (next[i2] === -1) {//未配对成功，next数组中只有0位置为-1，所以配对str1下一位
+                i1++;
+            } else {//未配对成功，str2的最大前缀下一个与i1配对
+                i2 = next[i2];
+            }
+        }
+        return i2 === str2.length ? i1 - i2 : -1;//i2到头相当于配对成功
+    }
+    /**
+     * 求解啊arr2的next数组
+     * @param arr2
+     * @returns {Array}
+     */
+    function getNextArray(arr2) {
+        if (arr2.length === 1) {
+            return [-1];
+        }
+        var next = new Array(arr2.length);
+        next[0] = -1;
+        next[1] = 0;
+        var pos = 2; //str2索引
+        var cn = 0;//比较位置为前一个数的next值
+        while (pos < arr2.length) {
+            if (arr2[pos - 1] === arr2[cn]) { //判断前一个数与比较位置最大前缀的后一个数是否相等
+                next[pos++] = ++cn; //相等时该点的next数值则为某个数的next数值+1，继续循环下一个数
+            } else if (cn > 0) {//不相等时，取cn位置做为比较位置
+                cn = next[cn];
+            } else {//cn<0时，比较位置为0位置，则该点next值为0
+                next[pos++] = 0;
+            }
+        }
+        return next;
+    }
+    console.log(KMP('12341234a', '1234a'));//4
+</script>
+</body>
+</html>
