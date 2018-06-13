@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>manacher算法</title>
+</head>
+<body>
+<script>
+    /**
+     * 往字符串中每个字符中间插入#号
+     * @param str
+     * @returns {Array}
+     */
+    function manacherString(str) {
+        var arr = str.split('');
+        var res = new Array(str.length * 2 + 1);
+        var index = 0;
+        for (var i = 0; i !== res.length; i++) {
+            res[i] = (i & 1) === 0 ? '#' : arr[index++];
+        }
+        return res;
+    }
+    /**
+     * 确定字符串中最大回文长度
+     * @param str
+     * @returns {number}
+     */
+    function maxLcpsLength(str) {
+        if (str.length === 0) {
+            return 0;
+        }
+        var arr = manacherString(str);
+        var pArr = new Array(arr.length); //每一点的最大回文半径
+        //最大回文半径时的中心点位置
+        var index = -1;
+        //最大回文半径时的右边界
+        var R = -1;
+        //最大回文半径
+        var max = Number.MIN_VALUE;
+        for (var i = 0; i !== arr.length; i++) {
+            //确定i是否在最大回文半径中，若i在半径中，则i的半径至少是对称点半径与i点右边到最大回文半径的最小值；
+            pArr[i] = R > i ? Math.min(pArr[2 * index - i], R - i) : 1;
+            //确认i点回文长度未超过字符串长度，
+            while (i + pArr[i] < arr.length && i - pArr[i] > -1) {
+                //确定i点回文直径两边的点是否相等
+                if (arr[i + pArr[i]] === arr[i - pArr[i]]) {
+                    //相等时i点回文半径加1，继续循环
+                    pArr[i]++;
+                } else {
+                    //不相等时退出循环
+                    break;
+                }
+            }
+            //修改最大回文半径时的右边界,与最大回文半径的中心点
+            if (i + pArr[i] > R) {
+                R = i + pArr[i];
+                index = i;
+            }
+            max = Math.max(max, pArr[i]);
+        }
+        return max - 1;
+    }
+    console.log(maxLcpsLength('a123321bcd'));
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kmp算法扩展题目一</title>
+</head>
+<body>
+<script>
+    /**
+     * 给定一个字符串str1，只能往str1的后面添加字符变成str2。
+     * 要求1：str2必须包含两个str1，两个str1可以有重合，但是不能以同一个位置开头。
+     * 要求2：str2尽量短。
+     * 要求返回str2。
+     * @param str1
+     * @returns {string}
+     */
+    function kmpQuestion1(str1) {
+        var next = new Array(str1.length+1);
+        var pos = 2;
+        var cn = 0;
+        var arr1 = str1.split('');
+        next[0] = -1;
+        next[1] = 0;
+        //求next数组
+        while(pos<arr1.length+1){
+            if(arr1[pos-1]===arr1[cn]){
+                next[pos++]=++cn;
+            }else if(cn>0){
+                cn=next[cn];
+            }else{
+                next[pos++]=0;
+            }
+        }
+        return str1+str1.substring(cn);
+    }
+    console.log(kmpQuestion1('123123'));//123123123
+</script>
+</body>
+</html>

@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6acb3ff9-5d9a-450e-9f88-96587e00dd9e" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KMP算法及其复杂度估计/KMP.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KMP算法及其复杂度估计/KMP-question1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KMP算法及其复杂度估计/KMP-question2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manacher算法及其复杂度估计/manacherString.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/算法复杂度/~$算法复杂度.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/算法复杂度以及排序/算法复杂度.docx" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/算法复杂度/MaxGap.html" afterPath="$PROJECT_DIR$/算法复杂度以及排序/MaxGap.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/算法复杂度/bubbleSort.html" afterPath="$PROJECT_DIR$/算法复杂度以及排序/bubbleSort.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/算法复杂度/heapSort.html" afterPath="$PROJECT_DIR$/算法复杂度以及排序/heapSort.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/算法复杂度/insertSort.html" afterPath="$PROJECT_DIR$/算法复杂度以及排序/insertSort.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/算法复杂度/mergeSort.html" afterPath="$PROJECT_DIR$/算法复杂度以及排序/mergeSort.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/算法复杂度/randomSort.html" afterPath="$PROJECT_DIR$/算法复杂度以及排序/randomSort.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/算法复杂度/selectionSort.html" afterPath="$PROJECT_DIR$/算法复杂度以及排序/selectionSort.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/算法复杂度/smallSum.html" afterPath="$PROJECT_DIR$/算法复杂度以及排序/smallSum.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,7 +31,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="MaxGap.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/算法复杂度/MaxGap.html">
+        <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/MaxGap.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
@@ -31,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KMP.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KMP.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KMP算法及其复杂度估计/KMP.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="480">
+              <caret line="53" column="50" lean-forward="true" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
               <folding>
                 <element signature="e#118#264#0" expanded="false" />
               </folding>
@@ -43,8 +54,38 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="KMP-question1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KMP算法及其复杂度估计/KMP-question1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manacherString.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/manacher算法及其复杂度估计/manacherString.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KMP-question2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KMP算法及其复杂度估计/KMP-question2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="mergeSort.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/算法复杂度/mergeSort.html">
+        <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/mergeSort.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="560">
               <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
@@ -54,9 +95,9 @@
         </entry>
       </file>
       <file leaf-file-name="bubbleSort.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/算法复杂度/bubbleSort.html">
+        <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/bubbleSort.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
+            <state relative-caret-position="405">
               <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
               <folding />
             </state>
@@ -64,7 +105,7 @@
         </entry>
       </file>
       <file leaf-file-name="randomSort.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/算法复杂度/randomSort.html">
+        <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/randomSort.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="640">
               <caret line="32" column="49" lean-forward="false" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
@@ -74,7 +115,7 @@
         </entry>
       </file>
       <file leaf-file-name="insertSort.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/算法复杂度/insertSort.html">
+        <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/insertSort.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="600">
               <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
@@ -110,6 +151,10 @@
         <option value="$PROJECT_DIR$/算法复杂度/heapSort.html" />
         <option value="$PROJECT_DIR$/算法复杂度/MaxGap.html" />
         <option value="$PROJECT_DIR$/KMP算法及其复杂度估计/KMP.html" />
+        <option value="$PROJECT_DIR$/KMP算法及其复杂度估计/KMP-question1.html" />
+        <option value="$PROJECT_DIR$/KMP算法及其复杂度估计/manacherString.html" />
+        <option value="$PROJECT_DIR$/KMP算法及其复杂度估计/KMP-question2.html" />
+        <option value="$PROJECT_DIR$/manacher算法及其复杂度估计/manacherString.html" />
       </list>
     </option>
   </component>
@@ -124,6 +169,9 @@
     <option name="y" value="-8" />
     <option name="width" value="1616" />
     <option name="height" value="886" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -163,7 +211,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="算法复杂度" />
+              <option name="myItemId" value="manacher算法及其复杂度估计" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -192,6 +240,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\QQQ\Desktop\algorithm-summary\manacher算法及其复杂度估计" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -287,23 +340,32 @@
       <workItem from="1528352465672" duration="608000" />
       <workItem from="1528703195720" duration="648000" />
       <workItem from="1528705304493" duration="2884000" />
-      <workItem from="1528788087308" duration="4936000" />
+      <workItem from="1528788087308" duration="15455000" />
     </task>
+    <task id="LOCAL-00001" summary="kmp算法添加">
+      <created>1528856686946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1528856686947</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24413000" />
+    <option name="totallyTimeSpent" value="34932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -323,12 +385,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="kmp算法添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="kmp算法添加" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/算法复杂度/MaxGap.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/MaxGap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -338,7 +404,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/mergeSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/mergeSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
@@ -346,7 +412,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/bubbleSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/bubbleSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
@@ -354,7 +420,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/randomSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/randomSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="32" column="49" lean-forward="false" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
@@ -362,7 +428,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/insertSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/insertSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
@@ -370,14 +436,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/heapSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/heapSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/insertSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/insertSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
@@ -385,14 +451,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/heapSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/heapSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/insertSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/insertSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
@@ -402,28 +468,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bubbleSort.html" />
     <entry file="file://$PROJECT_DIR$/算法复杂度/insertSort.js" />
-    <entry file="file://$PROJECT_DIR$/算法复杂度/selectionSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/selectionSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/smallSum.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/smallSum.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/heapSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/heapSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="53" column="43" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="53" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/insertSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/insertSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
@@ -431,7 +497,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/mergeSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/mergeSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
@@ -439,15 +505,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/bubbleSort.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/randomSort.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/randomSort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="32" column="49" lean-forward="false" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
@@ -455,7 +513,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/算法复杂度/MaxGap.html">
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/MaxGap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
@@ -465,13 +523,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/算法复杂度以及排序/bubbleSort.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/KMP算法及其复杂度估计/KMP.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="480">
+          <caret line="53" column="50" lean-forward="true" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
           <folding>
             <element signature="e#118#264#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KMP算法及其复杂度估计/KMP-question1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KMP算法及其复杂度估计/KMP-question2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manacher算法及其复杂度估计/manacherString.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
